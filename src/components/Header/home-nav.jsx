@@ -3,7 +3,7 @@ import propTypes from "prop-types";
 
 function HomeNav({ navList }) {
   return (
-    <div className="navigation-header">
+    <div className="navigation-header bg-white">
       <div className="navigation-container">
         <div className="navigation-wrapper flex justify-center">
           <div className="mobile-menu"></div>
@@ -11,7 +11,7 @@ function HomeNav({ navList }) {
             {navList.map((data, index) => (
               <li
                 key={index}
-                className="hover:bg-orange hover:text-white py-4 px-4"
+                className="hover:bg-orange hover:text-white py-4 px-3.5"
               >
                 <a href={data.url}>{data.name}</a>
               </li>

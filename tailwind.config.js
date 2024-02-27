@@ -10,6 +10,7 @@ export default {
       white: "#ffffff",
       white2: "#F1F1F1",
       white3: "#DADADA",
+      white4: "#DDD8D8",
       red: "#e54a4a",
       darkRed: "#CC3C3C",
       black: "#000000",
@@ -18,13 +19,14 @@ export default {
       darkGrey: "#595959",
       green2: "#538A43",
       orange: "#E28118",
+      "border-col": "#bdbdbd",
     },
     extend: {
       fontFamily: {
         sans: ["Baloo 2", "cursive"],
       },
       animation: {
-        marquee: "marquee 100s linear infinite",
+        marquee: "marquee 100s linear infinite ",
       },
       keyframes: {
         marquee: {

@@ -1,12 +1,21 @@
-// import { Route, Routes } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home/home";
+import { lazy, Suspense } from "react";
+import Layout from "./Layout/Layout";
+// lazy loading components
+const Home = lazy(() => import("./pages/Home/home"));
+const Login = lazy(() => import("./pages/auth/Login"));
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
+    <Suspense fallback={<h1>Loading..</h1>}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="index" element={<Home />} />
+          <Route path="login" element={<Login />} />
+        </Route>
+      </Routes>
+    </Suspense>
   );
 }
 
