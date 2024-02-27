@@ -4,6 +4,8 @@ import ProfileInfo from "../../widgets/cards/profile-info-card";
 import { navList, profileInfo } from "../../data/home-profile-info";
 import { Icon } from "@iconify/react";
 import HomeNav from "../../components/Header/home-nav";
+import Calendar from "@sbmdkl/nepali-datepicker-reactjs";
+import "@sbmdkl/nepali-datepicker-reactjs/dist/index.css";
 
 function Home() {
   return (
@@ -17,21 +19,21 @@ function Home() {
               <section className="secondary-navlist text-white flex items-center gap-4 mt-6 mb-6 ">
                 <a
                   href="/daily-cause-list"
-                  className="first-button bg-red rounded-md px-4 py-2 flex items-center gap-2"
+                  className="first-button bg-red rounded-md px-4 py-2 flex items-center gap-2 hover:shadow-xl"
                 >
                   <Icon icon="lets-icons:date-fill" fontSize={20} />
                   <b className="font-semibold text-sm">दैनिक पेसी सूची</b>
                 </a>
                 <a
                   href="/weekly-cause-list"
-                  className="second-button rounded-md px-4 py-2 flex items-center gap-2 bg-green2"
+                  className="second-button rounded-md px-4 py-2 flex items-center gap-2 bg-green2 hover:shadow-xl"
                 >
                   <Icon icon="lets-icons:date-fill" fontSize={20} />
                   <b className="font-semibold text-sm">साप्ताहिक पेसी सूची</b>
                 </a>
               </section>
               <section className="profile-section bg-darkRed text-white text-xl rounded-lg flex flex-col gap-1.3">
-                <h2 className="profile-section-heading font-medium p-4 text-center">
+                <h2 className="profile-section-heading font-medium  p-4 text-center">
                   न्यायिक समितिका पदाधिकारीहरुको नामावली
                 </h2>
                 <div className="profile-section-wrapper rounded-b-lg flex gap-16 flex-wrap justify-around bg-white py-12">
@@ -57,7 +59,7 @@ function Home() {
                           <select
                             name="complainType"
                             id="inlineFormCustomSelect"
-                            className="py-2 px-4 border border-grey rounded-md w-full focus:outline-none text-darkGrey"
+                            className="py-2 px-4 border border-grey rounded-md w-full focus:outline-none text-grey"
                             required
                           >
                             <option value disabled selected>
@@ -66,12 +68,12 @@ function Home() {
                           </select>
                         </div>
 
-                        <div className="section-content-item w-full md:w-1/3 lg:w-1/4">
-                          <input
-                            type="text"
-                            className="nepali-datepicker py-2 px-4 border border-grey rounded-md text-darkGrey w-full focus:outline-none"
-                            autoComplete="off"
+                        <div className="section-content-item w-full md:w-1/3 lg:w-1/4 bg-white rounded-md">
+                          <Calendar
                             placeholder="विवाद रजिस्टर गरिएको मिति"
+                            className="nepali-datepicker py-2 px-4 border border-grey rounded-md text-darkGrey w-full focus:outline-none"
+                            required
+                            autoComplete="off"
                           />
                         </div>
 

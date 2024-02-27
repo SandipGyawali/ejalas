@@ -3,11 +3,11 @@ import propTypes from "prop-types";
 
 function HomeNav({ navList }) {
   return (
-    <div className="navigation-header ">
+    <div className="navigation-header">
       <div className="navigation-container">
         <div className="navigation-wrapper flex justify-center">
           <div className="mobile-menu"></div>
-          <ul className="nav-list flex flex-wrap font-medium justify-between w-11/12">
+          <ul className="nav-list flex flex-wrap font-semibold justify-between w-11/12 text-grey">
             {navList.map((data, index) => (
               <li
                 key={index}

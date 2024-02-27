@@ -3,7 +3,7 @@ import { newsHead, newsData } from "../../data/home-profile-info";
 
 function NavBar() {
   return (
-    <header className="header-wrapper">
+    <header className="header-wrapper font-medium">
       <div className="main-header bg-cover bg-center bg-no-repeat bg-[url('/image/header/background.png')]">
         <div className="kmc-header h-auto bg-gradient-to-b from-gradientBlue to-gradientBlue">
           <div className="top-header flex justify-center">
@@ -18,7 +18,7 @@ function NavBar() {
                   ></iframe>
                 </span>
               </div>
-              <div className="tag-line text-white font-w500 hidden md:block">
+              <div className="tag-line text-white font-w500 hidden md:block font-md">
                 <span>साँस्कृतिक सहर, काठमाडौं महानगर</span>
               </div>
               <a
@@ -40,7 +40,7 @@ function NavBar() {
                   <img
                     src="/image/header/logo.png"
                     alt=""
-                    className="w-24 h-auto"
+                    className="w-28 h-auto"
                   />
                 </div>
                 <div className="title-container text-lg md:text-xl text-white text-center md:text-left w-full">

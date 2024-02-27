@@ -4,13 +4,13 @@ export default {
   theme: {
     colors: {
       darkBlue: "#263A57",
-      gradientBlue: "rgb(45,75,135, 0.84)",
+      gradientBlue: "rgb(40,74,140, 0.80)",
       blue: "#1076b9",
       textBlue: "#4a596b",
       white: "#ffffff",
       white2: "#F1F1F1",
       white3: "#DADADA",
-      red: "#F84E4E",
+      red: "#e54a4a",
       darkRed: "#CC3C3C",
       black: "#000000",
       black2: "#333",
@@ -20,6 +20,9 @@ export default {
       orange: "#E28118",
     },
     extend: {
+      fontFamily: {
+        sans: ["Baloo 2", "cursive"],
+      },
       animation: {
         marquee: "marquee 100s linear infinite",
       },
