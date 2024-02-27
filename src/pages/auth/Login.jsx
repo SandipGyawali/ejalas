@@ -49,7 +49,7 @@ function Login() {
                       name="password"
                       id="password"
                       placeholder="पासवर्ड"
-                      className=" py-1.5 px-4 border border-border-col rounded-md w-full focus:outline-none text-grey focus:shadow-md"
+                      className="py-1.5 px-4 border border-border-col rounded-md w-full focus:outline-none text-grey focus:shadow-md"
                     />
                     <div className="text-center btn my-4">
                       <button
