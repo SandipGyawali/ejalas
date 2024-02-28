@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Layout from "./Layout/Layout";
-import Melmilap from "./pages/Melmilap/Melmilap";
+
 // lazy loading components
-const Home = lazy(() => import("./pages/Home/home"));
-const Login = lazy(() => import("./pages/auth/Login"));
+const Home = lazy(() => import("./pages/Landing/home"));
+import { routes } from "./routes";
 
 function App() {
   return (
@@ -12,9 +12,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="index" element={<Home />} />
-          <Route path="login" element={<Login />} />
-          <Route path="melmilap" element={<Melmilap />} />
+          {routes.pages.map(({ path, element }, index) => (
+            <Route key={index} path={path} element={element} />
+          ))}
         </Route>
       </Routes>
     </Suspense>

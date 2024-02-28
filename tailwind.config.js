@@ -19,7 +19,9 @@ export default {
       darkGrey: "#595959",
       green2: "#538A43",
       orange: "#E28118",
+      orange2: "#F3A04A",
       "border-col": "#bdbdbd",
+      "text-col": "#545454",
     },
     extend: {
       fontFamily: {

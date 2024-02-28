@@ -51,7 +51,7 @@ function HomeBody() {
                       <select
                         name="complainType"
                         id="inlineFormCustomSelect"
-                        className="py-2 px-4 border border-grey rounded-md w-full focus:outline-none text-grey"
+                        className="py-2 px-4 border text-md border-border-col rounded-md w-full focus:outline-none text-text-col"
                         required
                       >
                         <option value disabled selected>
@@ -63,7 +63,7 @@ function HomeBody() {
                     <div className="section-content-item w-full md:w-1/3 lg:w-1/4 bg-white rounded-md">
                       <Calendar
                         placeholder="विवाद रजिस्टर गरिएको मिति"
-                        className="nepali-datepicker py-2 px-4 border border-grey rounded-md text-darkGrey w-full focus:outline-none"
+                        className="nepali-datepicker py-2 px-4 border border-border-col rounded-md text-text-col w-full focus:outline-none"
                         required
                         autoComplete="off"
                       />

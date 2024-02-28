@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import MelmilapProfile from "./MelmilapProfile";
+import MelmilapProfile from "../../widgets/cards/MelmilapProfile";
+import BreadCrumb from "../../components/BreadCrumb";
 
 function Melmilap() {
   const [melmilapUsers, setMelmilapUsers] = useState([]);
@@ -16,9 +17,10 @@ function Melmilap() {
   }, []);
 
   return (
-    <div className="ujurio-awastha flex justify-center my-20">
-      <div className="main-section-wrapper flex flex-col gap-10 w-11/12">
-        <section className="profile-section bg-darkRed text-white text-xl rounded-lg flex flex-col gap-1.3">
+    <div className="ujurio-awastha flex justify-center ">
+      <div className="main-section-wrapper flex flex-col gap-10">
+        <BreadCrumb text="मेलमिलाप" />
+        <section className="profile-section bg-darkRed text-white text-xl rounded-lg flex flex-col m-auto gap-1.3 mt-2 w-11/12">
           <h2 className="profile-section-heading font-medium  p-4 text-center">
             मेलमिलापकर्ताको सूची
           </h2>
@@ -30,8 +32,8 @@ function Melmilap() {
               : ""}
           </div>
         </section>
-        <section className="search-ujuri-section ">
-          <div className="search-ujuri-wrapper bg-white4 rounded-lg pb-12">
+        <section className="search-ujuri-section mb-10 w-11/12 m-auto">
+          <div className="search-ujuri-wrapper bg-white3 rounded-lg pb-12">
             <form
               action="/melmilap-karta"
               method="get"
@@ -43,7 +45,7 @@ function Melmilap() {
               <div className="flex justify-center">
                 <input
                   type="text"
-                  className="form-control w-11/12 rounded py-1.5 px-4 border border-border-col rounded-md  focus:outline-none text-grey focus:shadow-md"
+                  className="form-control w-11/12 text-sm rounded py-1.5 px-4 border border-border-col rounded-md  focus:outline-none text-grey focus:shadow-md"
                   placeholder="मुद्दा नम्बर राख्नुहोस्"
                   name="caseId"
                 />

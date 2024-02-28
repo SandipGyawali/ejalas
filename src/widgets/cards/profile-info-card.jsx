@@ -2,7 +2,7 @@ import propTypes from "prop-types";
 
 function ProfileInfo({ profileData }) {
   return (
-    <div className="profile-item font-medium">
+    <div className="profile-item font-medium mx-8">
       <div className="image-container">
         <img
           src={profileData.img}
