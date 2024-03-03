@@ -4,13 +4,17 @@ import App from "./App.jsx";
 import "../public/css/tailwind.css";
 import { BrowserRouter } from "react-router-dom";
 import { MobileContextProvider } from "./context/mobileNavContext.jsx";
+import { store } from "./redux/store.js";
+import { Provider } from "react-redux";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <MobileContextProvider>
-        <App />
-      </MobileContextProvider>
+      <Provider store={store}>
+        <MobileContextProvider>
+          <App />
+        </MobileContextProvider>
+      </Provider>
     </BrowserRouter>
   </React.StrictMode>,
 );

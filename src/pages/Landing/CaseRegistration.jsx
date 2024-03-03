@@ -5,7 +5,7 @@ function CaseRegistration() {
     <div className="online-case-registration-page">
       <section className="main-section">
         <div className="main-section-wrapper flex flex-col items-center">
-          <BreadCrumb text="विद्युतीय विवाद हाल्नुहोस्" />
+          <BreadCrumb head="गृहपृष्ठ" text="विद्युतीय विवाद हाल्नुहोस्" />
 
           <section className="case-registration-option-section w-11/12 mt-10 mb-5">
             <div className="case-registration-option-wrapper flex flex-col gap-2.5 text-center text-text-col">

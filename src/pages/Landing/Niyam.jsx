@@ -7,7 +7,7 @@ function Niyam() {
     <div className="niyam-page">
       <div className="main-section">
         <div className="main-section-wrapper">
-          <BreadCrumb text="ऐन / नियम" />
+          <BreadCrumb head="गृहपृष्ठ" text="ऐन / नियम" />
           <section className="niyam-section flex justify-center mb-10">
             <div className="niyam-container bg-white3 h-fit pb-12 w-11/12 mt-10 rounded-xl flex flex-col gap-4 items-center">
               <h2 className="text-xl font-semibold text-text-col mt-8">

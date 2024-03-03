@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
-function BreadCrumb({ text }) {
+function BreadCrumb({ head, text, customStyle = "mt-5" }) {
   return (
     <section
-      className="bread-crumb-section w-11/12 mt-5 text-text-col flex m-auto"
+      className={`bread-crumb-section w-11/12 text-text-col flex m-auto ${customStyle}`}
       style={{ fontSize: "15px" }}
     >
       <ul className="bread-crumb flex gap-1">
         <li>
           <a href="/index" className="text-blue">
-            गृहपृष्ठ
+            {head}
           </a>
         </li>
         <span>/</span>

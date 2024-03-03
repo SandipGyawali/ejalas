@@ -5,7 +5,7 @@ function HamroBarema() {
     <div className="hamro-barema-page">
       <div className="main-section">
         <div className="main-section-wrapper">
-          <BreadCrumb text="हाम्रो बारेमा" />
+          <BreadCrumb head="गृहपृष्ठ" text="हाम्रो बारेमा" />
           <section className="hamro-barema-section mt-6 mb-28">
             <div className="hamro-barema-container flex flex-col gap-2 items-center">
               <h2 className="text-blue font-extrabold text-2xl">

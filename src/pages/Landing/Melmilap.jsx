@@ -19,7 +19,7 @@ function Melmilap() {
   return (
     <div className="ujurio-awastha flex justify-center ">
       <div className="main-section-wrapper flex flex-col gap-10">
-        <BreadCrumb text="मेलमिलाप" />
+        <BreadCrumb head="गृहपृष्ठ" text="मेलमिलाप" />
         <section className="profile-section bg-darkRed text-white text-xl rounded-lg flex flex-col m-auto gap-1.3 mt-2 w-11/12">
           <h2 className="profile-section-heading font-medium  p-4 text-center">
             मेलमिलापकर्ताको सूची

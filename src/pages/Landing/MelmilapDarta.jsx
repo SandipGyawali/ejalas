@@ -7,7 +7,7 @@ function MelmilapDarta() {
     <div className="ujuriko-awastha-page">
       <div className="main-section">
         <div className="main-section-wrapper flex flex-col">
-          <BreadCrumb text="मेलमिलापकर्ता दर्ता" />
+          <BreadCrumb head="गृहपृष्ठ" text="मेलमिलापकर्ता दर्ता" />
           <section className="melmilapkarta-darta-section">
             <div className="melmilapkarta-darta-wrapper common-section-wrapper flex justify-center mt-10 mb-10">
               <form

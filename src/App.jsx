@@ -5,6 +5,8 @@ import Layout from "./Layout/Layout";
 // lazy loading components
 const Home = lazy(() => import("./pages/Landing/home"));
 import { routes } from "./routes";
+import DashboardLayout from "./Layout/DashboardLayout";
+import DashboardHome from "./pages/dashboard/dashboard-home";
 
 function App() {
   return (
@@ -15,6 +17,10 @@ function App() {
           {routes.pages.map(({ path, element }, index) => (
             <Route key={index} path={path} element={element} />
           ))}
+        </Route>
+        <Route path="/admin" element={<DashboardLayout />}>
+          <Route index path="dashboard" element={<DashboardHome />} />
+          <Route path="complain" element={<>Hello This is complain</>} />
         </Route>
       </Routes>
     </Suspense>

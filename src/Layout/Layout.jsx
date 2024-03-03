@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Outlet } from "react-router-dom";
 import NavBar from "../components/Nav/NavBar";
-import HomeNav from "../components/Header/home-nav";
+import HomeNav from "../components/Nav/home-nav";
 import { navList } from "../data/home-profile-info";
 
 function Layout() {

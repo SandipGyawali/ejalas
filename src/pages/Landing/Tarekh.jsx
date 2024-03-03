@@ -5,7 +5,7 @@ function Tarekh() {
     <div id="ujuriko-awastha-page">
       <div className="main-section">
         <div className="main-section-wrapper">
-          <BreadCrumb text="मेलमिलापकर्ता दर्ता" />
+          <BreadCrumb head="गृहपृष्ठ" text="मेलमिलापकर्ता दर्ता" />
           <section className="search-ujuri-section flex justify-center mt-10 mb-10">
             <div className="search-ujuri-wrapper w-11/12 flex justify-center bg-white3 rounded-xl">
               <form
