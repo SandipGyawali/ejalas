@@ -1,15 +1,15 @@
 import { lazy } from "react";
 
-const Login = lazy(() => import("./pages/auth/Login"));
-const Home = lazy(() => import("./pages/Landing/home"));
-const Melmilap = lazy(() => import("./pages/Landing/Melmilap"));
-const HamroBarema = lazy(() => import("./pages/Landing/HamroBarema"));
-const CaseRegistration = lazy(() => import("./pages/Landing/CaseRegistration"));
-const Niyam = lazy(() => import("./pages/Landing/Niyam"));
-const Tarekh = lazy(() => import("./pages/Landing/Tarekh"));
-const MelmilapDarta = lazy(() => import("./pages/Landing/MelmilapDarta"));
+const Login = lazy(() => import("@pages/auth/Login"));
+const Home = lazy(() => import("@pages/Landing/home"));
+const Melmilap = lazy(() => import("@pages/Landing/Melmilap"));
+const HamroBarema = lazy(() => import("@pages/Landing/HamroBarema"));
+const CaseRegistration = lazy(() => import("@pages/Landing/CaseRegistration"));
+const Niyam = lazy(() => import("@pages/Landing/Niyam"));
+const Tarekh = lazy(() => import("@pages/Landing/Tarekh"));
+const MelmilapDarta = lazy(() => import("@pages/Landing/MelmilapDarta"));
 
-export const routes = {
+export const home_routes = {
   layout: "landing",
   pages: [
     {

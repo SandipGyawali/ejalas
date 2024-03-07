@@ -104,7 +104,7 @@ export const list = [
         icon: <Icon icon="mdi:users" />,
       },
       {
-        url: "/department",
+        url: "/admin/department",
         text: "विभाग",
         icon: <Icon icon="mdi:building" />,
       },

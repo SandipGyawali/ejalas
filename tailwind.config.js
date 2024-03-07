@@ -8,6 +8,7 @@ export default {
       darkBlue: "#263A57",
       gradientBlue: "rgb(40,74,140, 0.80)",
       blue: "#1076b9",
+      blue2: "#2A88BF",
       textBlue: "#4a596b",
       sideBarBlue: "#196CD4",
       skyBlue: "#CEE9FF",
@@ -27,7 +28,9 @@ export default {
       orange: "#E28118",
       orange2: "#F3A04A",
       "border-col": "#bdbdbd",
+      "border-col2": "#dee2e6",
       "text-col": "#545454",
+      "table-bg": "#E6E6E6",
     },
     extend: {
       fontFamily: {
@@ -41,6 +44,9 @@ export default {
           "0%": { transform: "translateX(28%)" },
           "100%": { transform: "translateX(-100%)" },
         },
+      },
+      fontSize: {
+        md: "15px",
       },
     },
   },

@@ -1,12 +1,12 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Layout from "./Layout/Layout";
+import { masterData_routes } from "./routes/dashboard/masterDataBewasthaRoute";
+import { home_routes } from "./routes/dashboard/homeRoute";
 
 // lazy loading components
 const Home = lazy(() => import("./pages/Landing/home"));
-import { routes } from "./routes";
-import DashboardLayout from "./Layout/DashboardLayout";
-import DashboardHome from "./pages/dashboard/dashboard-home";
+const DashboardLayout = lazy(() => import("./Layout/DashboardLayout"));
 
 function App() {
   return (
@@ -14,13 +14,15 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          {routes.pages.map(({ path, element }, index) => (
+          {home_routes.pages.map(({ path, element }, index) => (
             <Route key={index} path={path} element={element} />
           ))}
         </Route>
         <Route path="/admin" element={<DashboardLayout />}>
-          <Route index path="dashboard" element={<DashboardHome />} />
-          <Route path="complain" element={<>Hello This is complain</>} />
+          <Route index element={<Navigate replace to="dashboard" />} />
+          {masterData_routes.pages.map(({ path, element }, index) => (
+            <Route path={path} element={element} key={index} />
+          ))}
         </Route>
       </Routes>
     </Suspense>

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-function BreadCrumb({ head, text, customStyle = "mt-5" }) {
+function BreadCrumb({ head, text, customStyle = "mt-5", href = "/index" }) {
   return (
     <section
       className={`bread-crumb-section w-11/12 text-text-col flex m-auto ${customStyle}`}
@@ -7,7 +7,7 @@ function BreadCrumb({ head, text, customStyle = "mt-5" }) {
     >
       <ul className="bread-crumb flex gap-1">
         <li>
-          <a href="/index" className="text-blue">
+          <a href={href} className="text-blue">
             {head}
           </a>
         </li>
