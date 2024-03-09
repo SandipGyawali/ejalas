@@ -1,8 +1,11 @@
 import BreadCrumb from "@components/BreadCrumb";
 import InputBox from "@widgets/cards/DashBoardInput/InputBox";
-import TableBoxWrapper from "@widgets/cards/Table/TableBoxWrapper";
-import Table from "@components/Table/dashboard-table";
 import { courtType } from "@data/tableHeading";
+import TableWrapper from "@components/Table/dashboard-table-wrapper";
+import InputBoxWrapper from "@widgets/cards/DashBoardInput/InputBoxWrapper";
+import TableCourtType from "@components/Table/table-court-type";
+
+const tableData = [{ id: 1, nayakSamitiType: "demo edit sf" }];
 
 function CourtType() {
   return (
@@ -25,10 +28,11 @@ function CourtType() {
           buttonName="थप्नुहोस्"
         />
 
-        {/* table court-type */}
-        <TableBoxWrapper>
-          <Table tableHeading={courtType} />
-        </TableBoxWrapper>
+        <InputBoxWrapper inputHeading="विवादको प्रकारको सूची">
+          <TableWrapper tableHeading={courtType}>
+            <TableCourtType tableData={tableData} />
+          </TableWrapper>
+        </InputBoxWrapper>
       </section>
     </div>
   );

@@ -1,13 +1,21 @@
 import BreadCrumb from "@components/BreadCrumb";
 import InputBoxWrapper from "@widgets/cards/DashBoardInput/InputBoxWrapper";
-import TableBoxWrapper from "@widgets/cards/Table/TableBoxWrapper";
-import Table from "@components/Table/dashboard-table";
 import { ward } from "@data/tableHeading";
+import TableWrapper from "@components/Table/dashboard-table-wrapper";
+import TableWard from "@components/Table/table-ward";
+
+const tableData = [
+  {
+    id: 1,
+    wada: "3",
+    wadaName: "३",
+  },
+];
 
 function Ward() {
   return (
     <div>
-      <section className="mains-section mr-4">
+      <section className="main-section mr-4">
         <BreadCrumb
           head="होम"
           text="वडा"
@@ -18,7 +26,7 @@ function Ward() {
         <InputBoxWrapper inputHeading="वडा थप्नुहोस्">
           <form
             action=""
-            className="flex flex-col gap-8 items-around mt-4 mx-6"
+            className="flex flex-col gap-8 items-around mt-4 mx-6 pb-4"
             method=""
           >
             <div className="input-wrapper flex gap-4 flex-col sm:flex-row">
@@ -66,9 +74,11 @@ function Ward() {
           </form>
         </InputBoxWrapper>
 
-        <TableBoxWrapper>
-          <Table tableHeading={ward} />
-        </TableBoxWrapper>
+        <InputBoxWrapper inputHeading="विवादको प्रकारको सूची">
+          <TableWrapper tableHeading={ward}>
+            <TableWard tableData={tableData} />
+          </TableWrapper>
+        </InputBoxWrapper>
       </section>
     </div>
   );

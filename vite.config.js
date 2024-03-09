@@ -18,4 +18,7 @@ export default defineConfig({
       "@pages": path.resolve(__dirname, "./src/pages"),
     },
   },
+  server: {
+    host: true,
+  },
 });

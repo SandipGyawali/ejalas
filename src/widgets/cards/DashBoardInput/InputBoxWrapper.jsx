@@ -5,7 +5,7 @@ import propTypes from "prop-types";
 function InputBoxWrapper({ inputHeading, children }) {
   return (
     <div
-      className="add-court-section common-add-section bg-white mt-6 pb-4"
+      className="add-court-section common-add-section bg-white mt-6 overflow-hidden"
       style={{
         height: "fit-content",
       }}
@@ -13,7 +13,7 @@ function InputBoxWrapper({ inputHeading, children }) {
       <h2 className="bg-blue2 text-white py-3 font-semibold text-center rounded-t-md">
         {inputHeading}
       </h2>
-      {children}
+      <div className="overflow-x-auto">{children}</div>
     </div>
   );
 }

@@ -1,8 +1,17 @@
 import BreadCrumb from "@components/BreadCrumb";
 import InputBoxWrapper from "@widgets/cards/DashBoardInput/InputBoxWrapper";
-import TableBoxWrapper from "@widgets/cards/Table/TableBoxWrapper";
-import Table from "../../../components/Table/dashboard-table";
 import { melmilapKarta } from "@data/tableHeading";
+import TableWrapper from "@components/Table/dashboard-table-wrapper";
+import TableMelMilapKarta from "@components/Table/table-melmilapKarta";
+
+const tableData = [
+  {
+    id: 1,
+    melmilapKartaName: "नामदेव भुसा",
+    wadaNo: "3",
+    wadaName: "३",
+  },
+];
 
 function MelmilapKarta() {
   return (
@@ -20,7 +29,7 @@ function MelmilapKarta() {
         <InputBoxWrapper inputHeading="मेलमिलापकर्ता थप्नुहोस्">
           <form
             action=""
-            className="flex flex-col gap-8 items-around mt-4 mx-6"
+            className="flex flex-col gap-8 items-around mt-4 pb-4 mx-6"
             method=""
           >
             <div className="input-wrapper flex flex-col sm:flex-row gap-4">
@@ -56,9 +65,11 @@ function MelmilapKarta() {
           </form>
         </InputBoxWrapper>
 
-        <TableBoxWrapper>
-          <Table tableHeading={melmilapKarta} />
-        </TableBoxWrapper>
+        <InputBoxWrapper inputHeading="विवादको प्रकारको सूची">
+          <TableWrapper tableHeading={melmilapKarta}>
+            <TableMelMilapKarta tableData={tableData} />
+          </TableWrapper>
+        </InputBoxWrapper>
       </section>
     </div>
   );

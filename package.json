@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "format": "prettier --write ./src",
     "test": "vitest",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "host": "vite --host"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",

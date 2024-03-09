@@ -1,8 +1,17 @@
 import BreadCrumb from "@components/BreadCrumb";
-import Table from "@components/Table/dashboard-table";
 import InputBox from "@widgets/cards/DashBoardInput/InputBox";
-import TableBoxWrapper from "@widgets/cards/Table/TableBoxWrapper";
-import { complainType } from "../../../data/tableHeading";
+import { complainType } from "@data/tableHeading";
+import InputBoxWrapper from "@widgets/cards/DashBoardInput/InputBoxWrapper";
+import TableWrapper from "@components/Table/dashboard-table-wrapper";
+import TableComplainType from "@components/Table/table-complain-type";
+
+const tableData = [
+  {
+    id: 1,
+    issueType:
+      "सरकारी, सार्वजनिक वा सामुदायिक बाहेक एकाको हकको जग्गा अर्काले चापी, मिची वा घुसाई खाएको,",
+  },
+];
 
 function ComplainType() {
   return (
@@ -25,10 +34,11 @@ function ComplainType() {
           buttonName="थप्नुहोस्"
         />
 
-        {/* contains the outer */}
-        <TableBoxWrapper>
-          <Table tableHeading={complainType} />
-        </TableBoxWrapper>
+        <InputBoxWrapper inputHeading="विवादको प्रकारको सूची">
+          <TableWrapper tableHeading={complainType}>
+            <TableComplainType tableData={tableData} />
+          </TableWrapper>
+        </InputBoxWrapper>
       </section>
     </div>
   );

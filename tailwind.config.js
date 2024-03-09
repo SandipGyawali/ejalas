@@ -9,6 +9,7 @@ export default {
       gradientBlue: "rgb(40,74,140, 0.80)",
       blue: "#1076b9",
       blue2: "#2A88BF",
+      blue3: "#007BFF",
       textBlue: "#4a596b",
       sideBarBlue: "#196CD4",
       skyBlue: "#CEE9FF",

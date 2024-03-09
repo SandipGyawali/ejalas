@@ -1,8 +1,16 @@
 import BreadCrumb from "@components/BreadCrumb";
 import InputBox from "@widgets/cards/DashBoardInput/InputBox";
-import TableBoxWrapper from "@widgets/cards/Table/TableBoxWrapper";
-import Table from "@components/Table/dashboard-table";
 import { department } from "@data/tableHeading";
+import InputBoxWrapper from "@widgets/cards/DashBoardInput/InputBoxWrapper";
+import TableWrapper from "@components/Table/dashboard-table-wrapper";
+import TableDepartment from "@components/Table/table-department";
+
+const tableData = [
+  {
+    id: 1,
+    department: "नगर प्रमुखज्यूको सचिवालय",
+  },
+];
 
 function Department() {
   return (
@@ -23,10 +31,11 @@ function Department() {
           buttonName="थप्नुहोस्"
         />
 
-        {/* table department */}
-        <TableBoxWrapper>
-          <Table tableHeading={department} />
-        </TableBoxWrapper>
+        <InputBoxWrapper inputHeading="विवादको प्रकारको सूची">
+          <TableWrapper tableHeading={department}>
+            <TableDepartment tableData={tableData} />
+          </TableWrapper>
+        </InputBoxWrapper>
       </section>
     </div>
   );

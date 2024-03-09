@@ -26,7 +26,7 @@ function DashboardHeader() {
 
   return (
     <div
-      className="top-section bg-skyBlue fixed top-0 flex items-center justify-between pl-4 pr-8  py-3"
+      className="top-section bg-skyBlue fixed top-0 flex items-center justify-between py-3 px-4"
       style={windowWidth <= "768" ? obj2 : obj}
     >
       <button className="mobile-menu" onClick={() => dispatch(toggle())}>
@@ -34,23 +34,23 @@ function DashboardHeader() {
           <Icon icon="fa6-solid:list" fontSize={20} />
         </span>
       </button>
-      <div className="heading-wrapper flex items-center gap-3 justify-center ">
-        <div className="img-container">
+      <div className="heading-wrapper flex items-center gap-3 justify-center">
+        <div className="img-container hidden sm:block absolute sm:static">
           <img src="/image/court-house.png" alt="court-house" width={22} />
         </div>
         <a href="/admin/dashboard" className="text-xl">
           इजलास
         </a>
-        <div className="img-container">
+        <div className="img-container hidden sm:block absolute sm:static">
           <img src="/image/court-house.png" alt="court-house" width={22} />
         </div>
       </div>
       <div
-        className="login-ser-wrapper flex gap-1.5 items-center relative cursor-pointer"
+        className="login-ser-wrapper flex items-center relative cursor-pointer"
         onMouseEnter={() => setUserSet(true)}
         onMouseLeave={() => setUserSet(false)}
       >
-        <Icon icon="solar:user-circle-linear" fontSize={18} />
+        <Icon icon="solar:user-circle-linear" fontSize={18} className="mr-2" />
         <h4>admin</h4>
         <Icon icon="iconamoon:arrow-down-2" fontSize={20} />
         {userSet && (

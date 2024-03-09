@@ -3,6 +3,7 @@ import { lazy, Suspense } from "react";
 import Layout from "./Layout/Layout";
 import { masterData_routes } from "./routes/dashboard/masterDataBewasthaRoute";
 import { home_routes } from "./routes/dashboard/homeRoute";
+import Case from "./pages/dashboard/case";
 
 // lazy loading components
 const Home = lazy(() => import("./pages/Landing/home"));
@@ -23,6 +24,8 @@ function App() {
           {masterData_routes.pages.map(({ path, element }, index) => (
             <Route path={path} element={element} key={index} />
           ))}
+          <Route path="cases" element={<Case />} />
+          <Route path="old-cases" element={<Case />} />
         </Route>
       </Routes>
     </Suspense>
