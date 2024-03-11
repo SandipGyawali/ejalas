@@ -66,11 +66,11 @@ export const list = [
         text: "पृष्ठ सेटिंग्समिलाउनुहोस",
         icon: <Icon icon="system-uicons:document-list" />,
       },
-      {
-        url: "/admin/user-mapping/save",
-        text: "प्रयोगकर्ता अदालत म्यापिङ",
-        icon: <Icon icon="fa-regular:user" />,
-      },
+      // {
+      //   url: "/admin/user-mapping/save",
+      //   text: "प्रयोगकर्ता अदालत म्यापिङ",
+      //   icon: <Icon icon="fa-regular:user" />,
+      // },
     ],
   },
   {

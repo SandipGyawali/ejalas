@@ -3,11 +3,12 @@ import { lazy, Suspense } from "react";
 import Layout from "./Layout/Layout";
 import { masterData_routes } from "./routes/dashboard/masterDataBewasthaRoute";
 import { home_routes } from "./routes/dashboard/homeRoute";
-import Case from "./pages/dashboard/case";
+import { prayog_karta_routes } from "./routes/dashboard/prayogKartaRoute";
 
 // lazy loading components
 const Home = lazy(() => import("./pages/Landing/home"));
 const DashboardLayout = lazy(() => import("./Layout/DashboardLayout"));
+const Case = lazy(() => import("@pages/dashboard/case"));
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
           ))}
           <Route path="cases" element={<Case />} />
           <Route path="old-cases" element={<Case />} />
+
+          {prayog_karta_routes.pages.map(({ path, element }, index) => (
+            <Route path={path} element={element} key={index} />
+          ))}
         </Route>
       </Routes>
     </Suspense>

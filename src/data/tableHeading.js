@@ -87,3 +87,31 @@ export const melmilapKarta = [
     title: "डिलिट गर्नुहोस्",
   },
 ];
+
+// user table heading
+export const user = [
+  {
+    title: "#",
+  },
+  {
+    title: "प्रयोगकर्ता नाम",
+  },
+  {
+    title: "ईमेल",
+  },
+  {
+    title: "पूरा नाम",
+  },
+  {
+    title: "Enabled",
+  },
+  {
+    title: "प्रयोगकर्ताको भूमिका",
+  },
+  {
+    title: "सम्पादन गर्नुहोस्",
+  },
+  {
+    title: "डिलिट गर्नुहोस्",
+  },
+];
