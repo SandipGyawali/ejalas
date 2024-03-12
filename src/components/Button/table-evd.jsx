@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 
 const iconLabel = {
   editIcon: "fa-regular:edit",
-  viewIcon: "ph:eye",
+  viewIcon: "mdi:eye",
   deleteIcon: "fa6-regular:trash-can",
 };
 

@@ -4,6 +4,7 @@ import Layout from "./Layout/Layout";
 import { masterData_routes } from "./routes/dashboard/masterDataBewasthaRoute";
 import { home_routes } from "./routes/dashboard/homeRoute";
 import { prayog_karta_routes } from "./routes/dashboard/prayogKartaRoute";
+import { dashboard_main } from "./routes/dashboard/dashboard";
 
 // lazy loading components
 const Home = lazy(() => import("./pages/Landing/home"));
@@ -29,6 +30,10 @@ function App() {
           <Route path="old-cases" element={<Case />} />
 
           {prayog_karta_routes.pages.map(({ path, element }, index) => (
+            <Route path={path} element={element} key={index} />
+          ))}
+
+          {dashboard_main.pages.map(({ path, element }, index) => (
             <Route path={path} element={element} key={index} />
           ))}
         </Route>
