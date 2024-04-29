@@ -22,6 +22,11 @@
 |----------------|----------------|
 
 &nbsp;
+### 🔧 Languages and Tools
+
+[![My Skills](https://skillicons.dev/icons?i=js,react)](https://skillicons.dev)
+
+&nbsp;
 ### 🚨 Important Note:
 
 This project aims to faithfully replicate the user interface (UI) of the original project while maintaining its core functionality and design elements. The focus lies primarily on emulating the UI aspects, ensuring a seamless user experience akin to the original. Through meticulous attention to detail and faithful reproduction, this endeavor seeks to provide users with a familiar interface reminiscent of the original project(not actual).
