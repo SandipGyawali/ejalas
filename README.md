@@ -16,6 +16,22 @@
 <p align="center"></p>
 
 &nbsp;
+### 🌆 Sample Images:
+
+![image](https://github.com/SandipGyawali/ejalas/assets/66510112/c2bdc936-294e-47c4-9ff1-fc0d1f784378)
+
+![image](https://github.com/SandipGyawali/ejalas/assets/66510112/6e6c8937-c615-4cb5-8ed8-d13489e8d1e0)
+
+![image](https://github.com/SandipGyawali/ejalas/assets/66510112/c652d7d7-3bfc-49c2-a6bc-be26f3b980a4)
+
+<div style="display: flex; align-items: center; border: 1px solid #ccc;">
+  <img src="https://github.com/SandipGyawali/ejalas/assets/66510112/55f20718-30c8-4048-8882-5130a2b5926c" alt="Image 1" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/SandipGyawali/ejalas/assets/66510112/75475fda-45ea-4ecf-861c-36dfe1d67a63" alt="Image 2" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+</div>
+
+
+&nbsp;
 ### 🤝 Contributors
 
 | <img alt="Issues" src="https://avatars.githubusercontent.com/u/66510112?v=4" width="25" height="25"> | <a href="https://github.com/SandipGyawali">Sandip Gyawali</a> |
@@ -26,7 +42,8 @@
 
 [![My Skills](https://skillicons.dev/icons?i=js,react)](https://skillicons.dev)
 
+
 &nbsp;
 ### 🚨 Important Note:
 
-This project aims to faithfully replicate the user interface (UI) of the original project while maintaining its core functionality and design elements. The focus lies primarily on emulating the UI aspects, ensuring a seamless user experience akin to the original. Through meticulous attention to detail and faithful reproduction, this endeavor seeks to provide users with a familiar interface reminiscent of the original project(not actual).
+This project aims to faithfully replicate the user interface (UI) of the original project while maintaining its core functionality and design elements. The focus lies primarily on emulating the UI aspects, ensuring a seamless user experience akin to the original. Through meticulous attention to detail and faithful reproduction, this endeavor seeks to provide users with a familiar interface reminiscent of the original project.
