@@ -5,9 +5,11 @@
 	EJALAS (इजलास)
 </h3> 
 <p align="center">
-		<img alt="Releases" src="https://img.shields.io/github/v/release/SandipGyawali/ejalas?style=for-the-badge&logo=github&color=F2CDCD&logoColor=D9E0EE&labelColor=302D4"/></a>
-	<a href="https://github.com/SandipGyawali/ejalas/issues">
-		<img alt="Issues" src="https://img.shields.io/github/issues/SandipGyawali/ejalas?style=for-the-badge&logo=gitbook&color=B5E8E0&logoColor=D9E0EE&labelColor=302D41">
+  <a href="https://github.com/SandipGyawali/ejalas/releases">
+	<img alt="Releases" src="https://img.shields.io/github/v/release/SandipGyawali/ejalas?style=for-the-badge&logo=github&color=F2CDCD&logoColor=D9E0EE&labelColor=302D4"/></a>
+  </a>
+  <a href="https://github.com/SandipGyawali/ejalas/issues">
+	<img alt="Issues" src="https://img.shields.io/github/issues/SandipGyawali/ejalas?style=for-the-badge&logo=gitbook&color=B5E8E0&logoColor=D9E0EE&labelColor=302D41">
   </a>
 </p>
 &nbsp;
