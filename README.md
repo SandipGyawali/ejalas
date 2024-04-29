@@ -26,7 +26,7 @@
 
 <div style="display: flex; align-items: center; border: 1px solid #ccc;">
   <img src="https://github.com/SandipGyawali/ejalas/assets/66510112/55f20718-30c8-4048-8882-5130a2b5926c" alt="Image 1" style="max-width: 100%; max-height: 100%; object-fit: contain;">
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://github.com/SandipGyawali/ejalas/assets/66510112/75475fda-45ea-4ecf-861c-36dfe1d67a63" alt="Image 2" style="max-width: 100%; max-height: 100%; object-fit: contain;">
 </div>
 
